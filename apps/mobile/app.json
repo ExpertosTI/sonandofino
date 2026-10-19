@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Sonando Fino",
+    "slug": "sonandofino",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "scheme": "sonandofino",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0e0a0c"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "net.sonandofino.app",
+      "infoPlist": {
+        "UIBackgroundModes": ["audio"]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0e0a0c"
+      },
+      "package": "net.sonandofino.app",
+      "permissions": ["RECORD_AUDIO", "FOREGROUND_SERVICE"]
+    },
+    "plugins": ["expo-router", "expo-av"],
+    "extra": {
+      "apiBase": "https://www.sonandofino.net",
+      "streamUrl": "https://www.sonandofino.net/live/",
+      "eas": { "projectId": "replace-after-eas-init" }
+    }
+  }
+}
